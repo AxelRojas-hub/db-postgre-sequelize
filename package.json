@@ -4,12 +4,15 @@
   "main": "index.js",
   "scripts": {
     "dev": "npx tsx index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon --watch server --exec npx tsx server/index.ts"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9",
     "pg": "^8.13.1",
     "pg-hstore": "^2.3.4",
     "sequelize": "^6.37.5"
